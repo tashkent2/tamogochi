@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagochi</title>
+
+    <link rel="preload" as="image" href="./materials/cat-assets/black/cat_fall_12.gif">
+    <link rel="preload" as="image" href="./materials/cat-assets/black/cat_jump_12.gif">
+    <link rel="preload" as="image" href="./materials/cat-assets/black/cat_land_12.gif">
+    <link rel="preload" as="image" href="./materials/cat-assets/black/cat_run_12.gif">
+
+    <link rel="preload" as="image" href="./materials/cat-assets/default/cat_fall_12.gif">
+    <link rel="preload" as="image" href="./materials/cat-assets/default/cat_jump_12.gif">
+    <link rel="preload" as="image" href="./materials/cat-assets/default/cat_land_12.gif">
+    <link rel="preload" as="image" href="./materials/cat-assets/default/cat_run_12.gif">
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header" style="visibility: hidden;">
+        <div class="header__stats">
+            <div class="header__stats-feature" id="hp">
+                <div class="header__stats-feature-logo"  id="hp-logo">HP</div>
+                <div class="header__stats-feature-value" id="hp-value"></div>
+            </div>
+
+            <div class="header__stats-feature" id="hunger">
+                <div class="header__stats-feature-logo"  id="hunger-logo"><img src="./materials/hunger.png" alt="hunger"></div>
+                <div class="header__stats-feature-value" id="hunger-value"></div>
+            </div>
+
+            <div class="header__stats-feature" id="happiness">
+                <div class="header__stats-feature-logo"  id="happiness-logo"><img src="" alt="happiness"></div>
+                <div class="header__stats-feature-value" id="happiness-value"></div>
+            </div>
+        </div>
+
+        <div class="header__acts">
+            <a class="header__acts-button button" id="play">Play</a>
+            <a class="header__acts-button button" id="eat">Eat</a>
+        </div>
+
+        <div class="header__eatMenu">
+            <a href="#" class="header__eatMenu-cancel button">Cancel</a>
+        </div>
+
+        <div class="header__playMenu">
+            <a href="#" class="header__playMenu-cancel button">Cancel</a>
+        </div>
+    </header>
+
+    <main class="main" style="visibility: hidden;">
+        <div class="main__wall"></div>
+
+        <div class="main__floor"></div>
+
+        <img class="main__bed" src="./materials/bed.png" alt="bed">
+
+        <img src="./materials/window.png" alt="window" class="main__window">
+    </main>
+
+    <div class="rotate-screen">
+        <img src="./materials/rotate.png" alt="rotate screen">
+        <h2>Please rotate the screen</h2>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
