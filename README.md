@@ -1,2 +1,2 @@
 # tamogochi
-1aa1.ru
+https://1aa1.ru/
